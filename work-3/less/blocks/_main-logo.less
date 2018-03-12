@@ -1,0 +1,46 @@
+.row--padding {
+    padding: 34px 0 27px;
+}
+
+.main-logo {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 41px;
+    text-transform: uppercase;
+    color: rgb(85, 85, 85);
+    letter-spacing: -1px;
+    position: relative;
+    cursor: pointer;
+    
+    p {
+        padding-left: 28px;
+        
+        a {
+            color: #000;
+            display: block;
+            
+            &:hover {
+                color: #000;
+                text-decoration: none;
+            }
+        }
+        
+    }
+    
+    & p::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: -10px;
+        top: 5px;
+        width: 30px;
+        height: 30px;
+        background-image: url("../img/navigation-logo/leaf.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 10px;
+    }
+}
+

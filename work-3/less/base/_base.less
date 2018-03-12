@@ -1,0 +1,64 @@
+html, body {
+	height: 100%;
+	min-width: 240px;
+}
+
+html {
+	font-size: 10px;
+	line-height: 1.4;
+}
+
+body {
+	font-size: 1.6rem; /* 10px * 1.6 = 16px */
+    font-family: 'noto_sans';
+    font-family: 'noto_serif';
+}
+
+a .scroll {
+    text-align: center;
+    color: #000;
+    display: block;
+    text-decoration: underline;
+    
+    &:hover {
+        color: lighten(#000, 50%);
+    }
+}
+
+.heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+	color: #000;
+    font-size: 22px;
+    letter-spacing: -1.5px;
+    
+    @media (min-width: 768px){
+        font-size: 40px;
+    }
+}
+
+.heading__description {
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    color: #777777;
+    
+    @media (min-width: 768px){
+        font-size: 20px;
+    }
+    
+}
+
+section {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    
+    @media (min-width: 992px){
+        padding: 100px 0;
+    }
+}
+
+.line {
+	border-top: 1px solid #EAEFF5;
+}

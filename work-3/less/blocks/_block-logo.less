@@ -1,0 +1,29 @@
+.block-logo {
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        margin: 0 auto;
+
+        li {
+            display: block;
+            margin-top: 30px;
+            cursor: pointer;
+
+            &:first-child {
+                margin-top: 0px;
+            }
+
+
+            @media (min-width: 992px) {
+                display: inline-block;
+                margin-right: 40px;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.navigation {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 41px;
+    text-transform: uppercase;
+    transition: all ease 0.2s;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    color: #000;
+    z-index: 1;
+    
+    @media (min-width: 768px){
+        position: inherit;
+    }
+
+    &-list {
+        display: none;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        padding: 0;
+        list-style-type: none;
+        position: fixed;
+        background-color: fadeout(#0a0404, 20%);
+        color: #fff;
+
+        @media (min-width: 768px) {
+            position: inherit;
+            display: block;
+            background: none;
+        }
+
+        &--open {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        li {
+            display: block;
+            margin: 0 0 40px;
+            padding: 0;
+            font-size: 18px;
+
+            @media (min-width: 768px) {
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                margin-right: 10px;
+                font-size: 11px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            @media (min-width: 992px) {
+                font-size: 14px;
+            }
+
+            @media (min-width: 1200px) {
+                margin-right: 40px;
+            }
+
+            a {
+                color: #fff;
+                transition: ease .2s;
+
+                &:hover {
+                    color: darken(#fff, 20%);
+                    text-decoration: none;
+                }
+                @media (min-width: 768px){
+                    color: #000;
+                    
+                    &:hover {
+                    color: lighten(#000, 30%);
+                    text-decoration: none;
+                }
+                }  
+                
+            }
+        }
+
+    }
+}
+
+.navigation__toggle {
+    display: block;
+    position: absolute;
+    font-size: 38px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    right: 16px;
+    top: 25px;
+    cursor: pointer;
+    z-index: 2;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.navigation__toggle--fixed {
+    position: fixed;
+}
