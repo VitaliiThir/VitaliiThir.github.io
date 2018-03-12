@@ -1,0 +1,109 @@
+.recommendation {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 80px;
+    
+    &__heading {
+        font-weight: bold;
+        color: #000;
+        font-size: 29.2px;
+    }
+    
+    &__text {
+        color: #777;
+        padding-top: 15px;
+        padding-bottom: 55px;
+        font-size: 17.2px;
+    }
+    
+    &__button {
+        font-weight: bold;
+        font-size: 14.83px;
+        padding: 15px 20px;
+        border: 1px solid #777;
+        border-radius: 10px;
+        color: #000;
+        display: inline-block;
+        margin-left: 37%;
+        margin-top: 30px;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: darken(#fff, 5%);
+            color: #fff;
+            text-shadow: 0 1px 2px fadeout(#000, 20%);
+        }
+        &:active {
+            background-color: transparent;
+            color: #000;
+        }
+        
+    }
+}
+
+.recommendation-item {
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 11px;
+    overflow: hidden;
+    
+    &__img {
+    
+    }
+    
+    &__heading {
+        text-align: center;
+        color: #000;
+        font-weight: bold;
+        margin-top: 28px;
+        font-size: 17.2px;
+    }
+    
+    &__text {
+        text-align: justify;
+        color: #777;
+        line-height: 24px;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 13.2px;
+    }
+    
+    &__load {
+        width: 85%;
+        margin: 0 auto;
+  
+    }
+    &__indicators {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        border-bottom: 1px solid #e5e5e5;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 5px;
+        font-weight: bold;
+        font-size: 13.2px;
+        color: #777;
+    }
+
+    &__link {
+        text-align: right;
+        padding: 20px 20px 10px;
+        font-weight: bold;
+        font-size: 15.2px;
+        color: #777;
+        
+        p {
+            display: block;
+            
+            &::after {
+                content: "►";
+                color: #add136;
+                font-size: 20px;
+                line-height: 18px;
+                margin-left: 10px;
+                
+                
+            }
+        }
+    }
+}
