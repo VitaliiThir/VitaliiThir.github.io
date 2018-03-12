@@ -1,0 +1,27 @@
+@main-color: rgb(0, 53, 83);
+
+@a-color: rgba(249,216,1,1);
+a {
+    transition: ease 0.2s;
+}
+
+.line {
+    border-top: 1px solid #e9eff3;
+}
+
+.section {
+    border-bottom: 1px solid #e9eff3;
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    @media (min-width: 768px) {
+        padding-top: 51px;
+        padding-bottom: 62px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 83px;
+        padding-bottom: 90px;
+        position: relative;
+    }
+}

@@ -1,0 +1,130 @@
+.navigation {
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 57px;
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: all ease 0.2s;
+
+    @media (min-width: 768px) {
+        position: absolute;
+        font-size: 18px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 22px;
+    }
+
+
+}
+
+.navigation__toggle {
+    display: block;
+    position: absolute;
+    font-size: 38px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    right: 16px;
+    top: 25px;
+    cursor: pointer;
+    z-index: 2;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.navigation__toggle--fixed {
+    position: fixed;
+}
+
+ul.navigation__list {
+    display: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 0;
+    list-style-type: none;
+    position: fixed;
+    background-color: fadeout(@main-color, 7%);
+
+    @media (min-width: 768px) {
+        display: block;
+        background: none;
+        position: absolute;
+        padding-left: 15px;
+    }
+
+    &--open {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @media (min-width: 768px) {
+            display: block;
+            position: absolute;
+        }
+
+    }
+
+    li {
+        margin: 0 0 40px;
+        padding: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (min-width: 768px) {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            margin-right: 50px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        @media (min-width: 1200px) {
+            margin-right: 110px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            &:hover,
+            &:focus,
+            &:active {
+                color: @a-color;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .link--underline-effect {
+        position: relative;
+        display: inline-block;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            background: @a-color;
+            height: 2px;
+            left: auto;
+            right: 0;
+            width: 0px;
+            -webkit-transition: all .5s cubic-bezier(.23, 1, .32, 1);
+            transition: all .5s cubic-bezier(.23, 1, .32, 1);
+        }
+        &:hover::before {
+            width: 100%;
+            right: auto;
+            left: 0;
+        }
+    }
+}
