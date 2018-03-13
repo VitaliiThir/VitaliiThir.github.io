@@ -1,0 +1,87 @@
+.photo-showcase {
+    text-align: center;
+    padding: 50px 0;
+
+    @media (min-width: 768px) {
+        padding: 100px 0;
+    }
+
+    &__heading {
+        font-family: 'Raleway', sans-serif;
+        color: #000;
+        line-height: 47px;
+        text-transform: uppercase;
+
+        h3 {
+            font-weight: bold;
+            font-size: 30px;
+
+            @media (min-width: 768px) {
+                font-size: 40px;
+            }
+        }
+
+    }
+
+    &__description {
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #777;
+        margin-top: 25px;
+        letter-spacing: -1px;
+        line-height: 45px;
+        text-align: justify;
+        font-size: 22px;
+
+        @media (min-width: 768px) {
+            padding: 0 80px;
+            text-align: center;
+            font-size: 36px;
+        }
+    }
+
+    &__item {
+        margin-top: 40px;
+
+        @media (min-width: 768px) {
+            margin-top: 90px;
+        }
+    }
+
+    .icon-play {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #494cab;
+        margin: 48px auto 0;
+        color: #fff;
+        line-height: 102px;
+        text-align: center;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    &__item {}
+
+    &__item-icon {
+        font-size: 42px;
+    }
+
+    &__item-title {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #000;
+        letter-spacing: 3px;
+        margin-top: 20px;
+        font-size: 19px;
+    }
+
+    &__item-text {
+        font-family: 'noto_serifregular';
+        line-height: 27px;
+        color: #777;
+        margin-top: 15px;
+        font-size: 19px;
+    }
+
+}

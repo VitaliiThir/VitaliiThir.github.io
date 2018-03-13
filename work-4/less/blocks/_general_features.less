@@ -1,0 +1,105 @@
+.general-features {
+    background-color: #e6e4df;
+    padding: 45px 0 90px;
+    position: relative;
+
+    @media(min-width: 768px) {
+        padding: 85px 0 90px;
+    }
+
+    .notebook-img {
+        position: absolute;
+        left: -33%;
+    }
+}
+
+.general-features__header {
+    
+    .general-features__heading {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-align: center;
+        color: #000;
+        font-size: 19px;
+        
+        @media(min-width: 992px) {
+            text-align: left;
+        }
+    }
+    .general-features__description {
+        font-family: 'noto_serifregular';
+        line-height: 36px;
+        color: #777;
+        text-align: justify;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        font-size: 16px;
+
+        @media(min-width: 768px) {
+            text-align: left;
+            margin-bottom: 40px;
+            margin-top: 35px;
+            font-size: 24px;
+        }
+    }
+}
+
+.general-features__item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media(min-width: 576px) {
+        flex-wrap: nowrap;
+    }
+
+    .general-features__item {
+        width: 100%;
+        
+
+        @media(min-width: 576px) {
+            padding-right: 20px;
+        }
+
+        @media(min-width: 1200px) {
+            width: 50%;
+        }
+    }
+    .general-features__item-icon {
+        font-size: 28px;
+        text-align: center;
+        
+        @media(min-width: 992px) {
+            text-align: left;
+        }
+    }
+    
+    .general-features__item-heading {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #000;
+        text-align: center;
+        margin-top: 25px;
+        font-size: 19px;
+        
+        @media(min-width: 992px) {
+            text-align: left;
+        }
+    }
+    .general-features__item-text {
+        font-family: 'noto_serifregular';
+        line-height: 27px;
+        color: #777;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 15px;
+        
+        @media(min-width: 992px) {
+            font-size: 19px;
+            text-align: left;
+        }
+    }
+}

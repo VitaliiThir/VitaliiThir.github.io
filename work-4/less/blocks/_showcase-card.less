@@ -1,0 +1,54 @@
+.showcase-card {
+
+    .showcase-cart__content {
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: -0.4px 5px 8px rgba(0, 0, 0, 0.1);
+        height: 320px;
+        margin-top: 25px;
+        
+        @media screen and (min-width: 576px) {
+            height: 340px;
+        }
+
+        @media screen and (min-width: 768px) {
+            height: 370px;
+        }
+
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    &__heading {
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 30px;
+        letter-spacing: -1px;
+        color: #000;
+        margin-top: 10px;
+        margin-bottom: 6px;
+        font-size: 28px;
+        
+        @media screen and (min-width: 768px) {
+        margin-top: 20px;
+        margin-bottom: 12px;
+        }
+        
+    }
+
+    &__text {
+        display: block;
+        font-family: 'noto_serifregular';
+        line-height: 1.2;
+        color: #777;
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 16px;
+
+        @media(min-width: 768px) {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    }
+}
